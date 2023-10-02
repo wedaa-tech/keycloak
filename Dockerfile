@@ -28,11 +28,4 @@ WORKDIR /opt/keycloak
 EXPOSE 8080
 
 # Start keycloak with required command line options.
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start-dev"]
-
-
-
-
-
-
-
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
