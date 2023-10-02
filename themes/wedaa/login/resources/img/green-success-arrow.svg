@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="47px" viewBox="0 0 47 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>8EAE45FF-4BFD-43D4-B8FA-0C84BA782DF2</title>
+    <g id="Alerts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-252.000000, -197.000000)" id="icon_alert_checkmark">
+            <g transform="translate(253.000000, 198.000000)">
+                <circle id="Oval" stroke="#6BA65C" cx="22.5" cy="22.5" r="22.5"></circle>
+                <g id="check" transform="translate(22.366659, 20.553770) rotate(38.000000) translate(-22.366659, -20.553770) translate(13.366659, 5.553770)" fill="#6BA65C">
+                    <path d="M11.768677,23.4239785 L11.768677,0.423978493 L17.768677,0.423978493 L17.768677,29.4239785 L0.768677049,29.4239785 L0.768677049,23.4239785 L11.768677,23.4239785 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
