@@ -81,6 +81,10 @@
                <span style="text-size:16px;">Already have an account?</span>
                <a href="${url.loginUrl}" style="color:#0000ff;font-weight:500 ">Sign In</a>
             </div>
+            <div style="margin-top:25px;text-align:center;">
+               <span style="text-size:16px;">Want to go back?</span>
+               <a href="${properties.wedaaUrl}" style="color:#0000ff;font-weight:500">Cancel</a>
+            <div>
          </div>
              
       </#if>  
