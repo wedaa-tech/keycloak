@@ -22,8 +22,8 @@
 	<body style="background-image:url('${url.resourcesPath}/${properties.backgroundImagePath!}');background-repeat: no-repeat;background-size: 100% 100%;">
         <#--  <#nested "header">  -->
         <div class="page-wrapper bg-gra-01 p-t-20">
-         <div style="text-align:center;padding-bottom:20px; border-bottom:1px solid #eee">
-        <img src="${url.resourcesPath}/${properties.logoPath!}" style="width:200px;height:100px"> 
+         <div style="text-align:center;padding-bottom:20px;">
+        <img src="${url.resourcesPath}/${properties.logoPath!}" style="width:200px;height:160px"> 
         </div>
             <div class="wrapper wrapper--w780" style="max-width:470px;">
             <#if displayMessage && message?has_content>

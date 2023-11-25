@@ -74,6 +74,11 @@ ${msg("loginTitle",(realm.displayName!''))}
    <a href="${url.registrationUrl}" style="color:#0000ff;font-weight:500">Sign Up</a>
    <div>
    </div>
+<div style="margin-top:25px;text-align:center;">
+   <span style="text-size:16px;">Want to go back?</span>
+   <a href="${properties.wedaaUrl}" style="color:#0000ff;font-weight:500">Cancel</a>
+   <div>
+   </div>
 </div>
 <script>
         const togglePassword = document.querySelector("#togglePassword");
