@@ -42,12 +42,14 @@
 
                   
                   <div class="input-group-register">
-                  <input type="text" id="password" class="input--style-3 input-width"  name="password"required oninvalid="this.setCustomValidity('Enter your password')"
+                  <input type="password" id="password" class="input--style-3 input-width"  name="password"required oninvalid="this.setCustomValidity('Enter your password')"
                         oninput="this.setCustomValidity('')"  value="${(register.formData.password!'')}" autocomplete="password" placeholder="${msg("Password*")}"/>
+                  <button type="button" class="toggle" id="togglePassword" data-target="password"><i class="fa fa-eye" style="color:#3E4957;"></i></button>
                   </div>
                   <div class="input-group-register">
-                  <input type="text" id="password-confirm" class="input--style-3 input-width"  name="password-confirm"required oninvalid="this.setCustomValidity('Enter your confirm password')"
+                  <input type="password" id="password-confirm" class="input--style-3 input-width"  name="password-confirm"required oninvalid="this.setCustomValidity('Enter your confirm password')"
                         oninput="this.setCustomValidity('')"  value="${(register.formData.passwordConfirm!'')}" autocomplete="password-confirm" placeholder="${msg("Confirm password*")}"/>
+                  <button type="button" class="toggle" id="togglePasswordConfirm" data-target="password-confirm"><i class="fa fa-eye" style="color:#3E4957;"></i></button>
                   </div>
                </#if>
          
@@ -94,6 +96,26 @@
          checker.onchange = function() {
             submit.disabled = !this.checked;
          };
+         
+         document.addEventListener("DOMContentLoaded", function () {
+            const toggleButtons = document.querySelectorAll(".toggle");
+            toggleButtons.forEach(function (button) {
+               button.addEventListener("click", function () {
+                  const targetId = this.getAttribute("data-target");
+                  const passwordInput = document.getElementById(targetId);
+
+                  if (passwordInput) {
+                     // toggle the type attribute
+                     const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+                     passwordInput.setAttribute("type", type);
+
+                     // toggle the icon
+                     this.querySelector("i").classList.toggle("fa-eye-slash");
+                  }
+               });
+            });
+         });
+
       </script>
    </#if>
 </@layout.registrationLayout>
